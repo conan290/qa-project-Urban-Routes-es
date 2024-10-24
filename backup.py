@@ -39,9 +39,8 @@ class UrbanRoutesPage:
     from_field = (By.ID, 'from')
     to_field = (By.ID, 'to')
     flash_mode = (By.XPATH, "//div[@class='mode' and text()='Flash']")
-    request_taxi_button = (By.CSS_SELECTOR, 'button.button.round')
+    request_taxi_button = (By.XPATH, "//div[@class='results-text']//button[text()='Pedir un taxi']")
     comfort_tariff = (By.XPATH, "//div[@class='tcard-icon']/img[@alt='Comfort']")
-    phone_button = (By.CLASS_NAME, "np-text")
     phone_number_input = (By.ID, 'phone')
     payment_method_button = (By.XPATH, "//div[@class='pp-button filled']")
     add_card_option = (By.XPATH, "//div[text()='Agregar tarjeta']")
@@ -67,9 +66,7 @@ class UrbanRoutesPage:
         self.set_to(to_address)
 
     def open_phone_number_modal(self):
-        WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable(self.phone_button)
-        ).click()
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.phone_button)).click()
 
     def set_from(self, from_address):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.from_field))
@@ -83,9 +80,8 @@ class UrbanRoutesPage:
         self.driver.find_element(*self.flash_mode).click()
 
     def request_taxi(self):
-        WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable(self.request_taxi_button)
-        ).click()
+        WebDriverWait(self.driver, 4).until(EC.presence_of_element_located(self.request_taxi_button))
+        self.driver.find_element(*self.request_taxi_button).click()
 
     def select_payment_method_card(self):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.payment_method_button)).click()
@@ -242,6 +238,4 @@ class TestUrbanRoutes:
     @classmethod
     def teardown_class(cls):
         cls.driver.quit()
-
-
 

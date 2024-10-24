@@ -7,6 +7,7 @@ Este proyecto contiene una suite de pruebas automatizadas para la página web de
 ## Tecnologías y Técnicas Utilizadas
 
 - **Lenguaje**: Python
+- **Ejecución de pruebas**: Pytest
 - **Automatización de pruebas**: Selenium WebDriver
 - **Patrón de diseño**: Page Object Model (POM)
 - **Manejo de esperas**: WebDriverWait para sincronizar las interacciones con elementos de la página.
