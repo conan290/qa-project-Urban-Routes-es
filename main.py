@@ -121,7 +121,7 @@ class UrbanRoutesPage:
         blanket_tissues_switch = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable(self.blanket_and_tissues_checkbox)
         )
-        blanket_tissues_switch.click()  # Activa el switch
+        blanket_tissues_switch.click()
 
     def request_ice_cream(self, quantity):
         self.driver.execute_script("arguments[0].scrollIntoView(true);",
@@ -213,7 +213,7 @@ class TestUrbanRoutes:
         routes_page.set_route(data.address_from, data.address_to)
         routes_page.request_taxi()
         routes_page.select_comfort_tariff()
-        routes_page.request_blanket_and_tissues()  # Activa el botón para pedir manta y pañuelos
+        routes_page.request_blanket_and_tissues()
 
     def test_request_ice_cream(self):
         self.driver.get(data.urban_routes_url)
