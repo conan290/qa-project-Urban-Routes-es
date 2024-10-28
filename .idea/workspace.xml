@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c7b9b88-898a-4c08-88f3-c1aa0f4b4ec7" name="Changes" comment="" />
+    <list default="true" id="1c7b9b88-898a-4c08-88f3-c1aa0f4b4ec7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qa-project-Urban-Routes-es.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,24 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for backup.TestUrbanRoutes.test_fill_phone_number.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_add_credit_card.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_request_blanket_and_tissues.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_request_ice_cream.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_request_taxi.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_select_comfort_tariff.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_select_flash_mode.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_send_driver_message.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor": "Run",
-    "Python tests.Python tests for main.TestUrbanRoutes.test_set_to_address.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/waves/projects/qa-project-Urban-Grocers-app-es"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for backup.TestUrbanRoutes.test_fill_phone_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_add_credit_card.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_request_blanket_and_tissues.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_request_ice_cream.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_request_taxi.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_select_comfort_tariff.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_select_flash_mode.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_send_driver_message.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_set_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for main.TestUrbanRoutes.test_set_to_address.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/waves/projects/qa-project-Urban-Grocers-app-es&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for main.TestUrbanRoutes.test_fill_phone_number">
     <configuration name="Python tests for backup.TestUrbanRoutes.test_fill_phone_number" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="qa-project-Urban-Routes-es" />

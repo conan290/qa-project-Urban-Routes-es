@@ -170,6 +170,7 @@ class TestUrbanRoutes:
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.set_route(data.address_from, data.address_to)
         routes_page.request_taxi()
+        assert "Taxi solicitado" in self.driver.page_source
 
     def test_select_comfort_tariff(self):
         self.driver.get(data.urban_routes_url)
@@ -177,6 +178,7 @@ class TestUrbanRoutes:
         routes_page.set_route(data.address_from, data.address_to)
         routes_page.request_taxi()
         routes_page.select_comfort_tariff()
+        assert "Comfort" in self.driver.page_source
 
     def test_fill_phone_number(self):
         self.driver.get(data.urban_routes_url)
@@ -186,6 +188,7 @@ class TestUrbanRoutes:
         routes_page.select_comfort_tariff()
         routes_page.open_phone_number_modal()
         routes_page.set_phone_number(data.phone_number)
+        assert data.phone_number in self.driver.page_source
 
     def test_add_credit_card(self):
         self.driver.get(data.urban_routes_url)
@@ -206,6 +209,7 @@ class TestUrbanRoutes:
         routes_page.request_taxi()
         routes_page.select_comfort_tariff()
         routes_page.send_driver_message(data.message_for_driver)
+        assert data.message_for_driver in self.driver.page_source
 
     def test_request_blanket_and_tissues(self):
         self.driver.get(data.urban_routes_url)
@@ -214,6 +218,7 @@ class TestUrbanRoutes:
         routes_page.request_taxi()
         routes_page.select_comfort_tariff()
         routes_page.request_blanket_and_tissues()
+        assert "Manta y pañuelos activados" in self.driver.page_source
 
     def test_request_ice_cream(self):
         self.driver.get(data.urban_routes_url)
@@ -222,6 +227,10 @@ class TestUrbanRoutes:
         routes_page.request_taxi()
         routes_page.select_comfort_tariff()
         routes_page.request_ice_cream(2)
+        current_value = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(routes_page.ice_cream_value)
+        ).text
+        assert current_value == "2", f"Se esperaba 2 helados, pero el contador muestra {current_value}"
 
     def test_taxi_search_modal_appears(self):
         self.driver.get(data.urban_routes_url)
