@@ -24,7 +24,7 @@ Before running the tests, make sure you have the following tools installed:
 
 Install the necessary dependencies using the following command:
 
-pip install selenium
+'pip install selenium'
 
 ## Project Structure
 
