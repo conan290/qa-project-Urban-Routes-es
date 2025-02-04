@@ -1,56 +1,58 @@
-# Pruebas Automatizadas para Urban Routes
+# Automated Tests for Urban Routes
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto contiene una suite de pruebas automatizadas para la página web de Urban Routes, una aplicación de rutas urbanas que permite solicitar taxis. Las pruebas verifican diversas funcionalidades como la selección de rutas, tarifas de taxi, la adición de una tarjeta de crédito, y el envío de mensajes al conductor. Además, incluyen interacciones avanzadas como el manejo de contadores para seleccionar helados y activar opciones especiales como pedir manta y pañuelos.
+This project contains a suite of automated tests for the Urban Routes website, an urban routing application that allows users to request taxis. The tests verify various functionalities such as route selection, taxi fare options, adding a credit card, and sending messages to the driver. Additionally, they include advanced interactions such as managing counters to select ice cream and activating special options like requesting a blanket and tissues.
 
-## Tecnologías y Técnicas Utilizadas
+## Technologies and Techniques Used
 
-- **Lenguaje**: Python
-- **Ejecución de pruebas**: Pytest
-- **Automatización de pruebas**: Selenium WebDriver
-- **Patrón de diseño**: Page Object Model (POM)
-- **Manejo de esperas**: WebDriverWait para sincronizar las interacciones con elementos de la página.
-- **Interacción avanzada con el DOM**: Uso de JavaScript para hacer scroll hacia elementos no visibles y ejecutar comandos en segundo plano.
-- **Aserciones**: Validación de resultados utilizando `assert` en Python.
+- **Language**: Python
+- **Test Execution**: Pytest
+- **Test Automation**: Selenium WebDriver
+- **Design Pattern**: Page Object Model (POM)
+- **Wait Handling**: WebDriverWait for synchronizing interactions with page elements.
+- **Advanced DOM Interaction**: Using JavaScript to scroll to non-visible elements and execute background commands.
+- **Assertions**: Validating results using `assert` in Python.
 
-## Requisitos Previos
+## Prerequisites
 
-Antes de ejecutar las pruebas, asegúrate de tener instaladas las siguientes herramientas:
+Before running the tests, make sure you have the following tools installed:
 
 1. **Python 3.x**
-2. **Google Chrome** (Última versión)
-3. **ChromeDriver** compatible con la versión de Chrome instalada.
+2. **Google Chrome** (Latest version)
+3. **ChromeDriver** compatible with the installed version of Chrome.
 
-Instala las dependencias necesarias utilizando el siguiente comando:
+Install the necessary dependencies using the following command:
 
+```bash
 pip install selenium
 
-## Estructura del Proyecto
+## Project Structure
 
-- **main.py**: Contiene las clases `UrbanRoutesPage` y `TestUrbanRoutes` que implementan las pruebas.
-- **data.py**: Contiene los datos utilizados en las pruebas como URLs, direcciones, números de teléfono y más.
-- **README.md**: Documentación del proyecto (este archivo).
+- **main.py**: Contains the `UrbanRoutesPage` and `TestUrbanRoutes` classes that implement the tests.
+- **data.py**: Contains the data used in the tests, such as URLs, addresses, phone numbers, and more.
+- **README.md**: Project documentation (this file).
 
-## Instrucciones para Ejecutar las Pruebas
+## Instructions to Run the Tests
 
-### Paso 1: Configuración de ChromeDriver
+### Step 1: ChromeDriver Setup
 
-1. Descarga [ChromeDriver](https://sites.google.com/chromium.org/driver) y colócalo en una carpeta accesible.
-2. Asegúrate de agregar el directorio de ChromeDriver a tu variable de entorno `PATH`, o bien asegúrate de que esté en la misma carpeta del proyecto.
+1. Download [ChromeDriver](https://sites.google.com/chromium.org/driver) and place it in an accessible folder.
+2. Make sure to add the ChromeDriver directory to your `PATH` environment variable, or ensure that it is in the same folder as the project.
 
-### Paso 2: Ejecución de las Pruebas
+### Step 2: Running the Tests
 
-1. Clona el repositorio o descarga los archivos del proyecto.
-2. Desde una terminal, navega hasta la carpeta que contiene el proyecto.
-3. Ejecuta el siguiente comando para ejecutar las pruebas:
+1. Clone the repository or download the project files.
+2. From a terminal, navigate to the folder containing the project.
+3. Run the following command to execute the tests:
 
     ```bash
     pytest main.py
     ```
 
-    Esto ejecutará la suite completa de pruebas automatizadas. Asegúrate de que Google Chrome esté cerrado antes de iniciar las pruebas, ya que el WebDriver abrirá una nueva instancia del navegador para cada prueba.
+    This will run the entire suite of automated tests. Ensure that Google Chrome is closed before starting the tests, as WebDriver will open a new browser instance for each test.
 
-### Paso 3: Verificación de los Resultados
+### Step 3: Verifying the Results
 
-Al final de la ejecución de las pruebas, recibirás un reporte en la terminal que indicará si las pruebas han pasado o si alguna ha fallado. Puedes analizar los errores detallados para solucionar posibles problemas en las pruebas o en la página.
+At the end of the test execution, you will receive a report in the terminal indicating whether the tests have passed or if any have failed. You can analyze the detailed errors to troubleshoot potential issues in the tests or on the website.
+
